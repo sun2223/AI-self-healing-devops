@@ -1,0 +1,81 @@
+# ==============================================================================
+# PULSE DevOps Agent — .gitignore
+# ==============================================================================
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.env/
+
+# ── Environment Variables — NEVER COMMIT THESE ────────────────────────────────
+.env
+.env.local
+.env.*.local
+# .env.example IS safe to commit (it has no real values)
+
+# ── Databases ─────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Vector Memory (ChromaDB) ──────────────────────────────────────────────────
+pulse_memory/
+chroma_db/
+.chroma/
+
+# ── Cloned Repositories (temporary) ──────────────────────────────────────────
+cloned_repos/
+temp_repos/
+
+# ── Generated Reports ─────────────────────────────────────────────────────────
+reports/
+*.pdf
+
+# ── Node.js / Frontend ────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.next/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
